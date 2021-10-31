@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activity"
+        android:title="@string/act"
+        android:icon="@drawable/ic_vector_activity" />
+    <item
+        android:id="@+id/profile"
+        android:title="@string/prof"
+        android:icon="@drawable/ic_vector_profile" />
+</menu>
