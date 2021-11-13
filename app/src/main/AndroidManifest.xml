@@ -2,12 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.fefu.activitytracker">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Activity" />
+    <application>
+        <activity
+            android:name=".FourthActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Activity.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homework1.ThirdActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Activity.NoActionBar"/>
+        <activity
+            android:name=".homework1.SecondActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Activity.NoActionBar"/>
+        <activity
+            android:name=".homework1.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Activity.NoActionBar">
+        </activity>
+    </application>
 
 </manifest>

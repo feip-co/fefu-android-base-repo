@@ -1,3 +1,63 @@
 <resources>
     <string name="app_name">Activity Tracker</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="uzhe">Уже есть аккаунт?</string>
+    <string name="luchshi">Пожалй, лучший фитнес трекер в ДВФУ</string>
+    <string name="sozdaniy">Созданный студентами 2-го курса</string>
+    <string name="title_activity_main">Регистрация</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="your_string"> Нажимая на кнопку, вы соглашаетесь с <font color="#0000FF">политикой конфиденциальности </font>и обработки персональных данных, а также принимаете <font color="#0000FF">пользовательское соглашение</font></string>
+    <string name="login">Логин</string>
+    <string name="Password">Пароль</string>
+    <string name="Name">Имя или никнейм</string>
+    <string name="tryPass">Повторите пароль</string>
+    <string name="Female">Женский</string>
+    <string name="Male">Мужской</string>
+    <string name="Enother">Другой</string>
+    <string name="Sex">Пол</string>
+    <string name="activity">Активность</string>
+    <string name="profile">Профиль</string>
+    <string name="mine">Моя</string>
+    <string name="users">Пользователей</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yesterday">Вчера</string>
+    <string name="that_year">%s года</string>
+    <plurals name="meters">
+        <item quantity="one">%d м</item>
+        <item quantity="other">%d м</item>
+    </plurals>
+    <string name="kilometers">%.2f км</string>
+    <string name="ago">назад</string>
+    <plurals name="minutes">
+        <item quantity="zero">%d минут</item>
+        <item quantity="one">%d минуту</item>
+        <item quantity="two">%d минуты</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+        <item quantity="other">%d минут</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%d часов</item>
+        <item quantity="one">%d час</item>
+        <item quantity="two">%d часа</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+        <item quantity="other">%d часов</item>
+    </plurals>
+    <plurals name="abbreviated_minutes">
+        <item quantity="zero">%d мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="abbreviated_hours">
+        <item quantity="zero">%d ч</item>
+        <item quantity="other">%d ч</item>
+    </plurals>
 </resources>
