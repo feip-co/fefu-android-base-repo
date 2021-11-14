@@ -3,7 +3,6 @@ package ru.fefu.activitytracker
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import ru.fefu.activitytracker.R
 
 class Nav_act: AppCompatActivity() {
     private var bottomNav: BottomNavigationView? = null
@@ -33,11 +32,16 @@ class Nav_act: AppCompatActivity() {
                 R.id.menu_activity -> {
                     val profileFragment = supportFragmentManager.findFragmentByTag("profile")
                     supportFragmentManager.beginTransaction().apply{
-                        add(
-                            R.id.fragment_container,
-                            Activities_act.newFragment(),
-                            "activity"
-                        )
+                        if(profileFragment != null) {
+                            attach(profileFragment)
+                        }
+                        else {
+                            add(
+                                R.id.fragment_container,
+                                Activities_act.newFragment(),
+                                "activity"
+                            )
+                        }
                         if (profileFragment != null)
                             detach(profileFragment)
                         commit()
@@ -47,11 +51,16 @@ class Nav_act: AppCompatActivity() {
                 R.id.menu_profile-> {
                     val activityFragment = supportFragmentManager.findFragmentByTag("activity")
                     supportFragmentManager.beginTransaction().apply {
-                        add(
-                            R.id.fragment_container,
-                            Profile_act.newFragment(),
-                            "profile"
-                        )
+                        if(activityFragment != null) {
+                            attach(activityFragment)
+                        }
+                        else {
+                            add(
+                                R.id.fragment_container,
+                                Profile_act.newFragment(),
+                                "profile"
+                            )
+                        }
                         if (activityFragment != null)
                             detach(activityFragment)
                         commit()
