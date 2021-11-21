@@ -31,9 +31,10 @@ class Nav_act: AppCompatActivity() {
             when (item.itemId) {
                 R.id.menu_activity -> {
                     val profileFragment = supportFragmentManager.findFragmentByTag("profile")
+                    val activityFragment = supportFragmentManager.findFragmentByTag("activity")
                     supportFragmentManager.beginTransaction().apply{
-                        if(profileFragment != null) {
-                            attach(profileFragment)
+                        if(activityFragment != null) {
+                            attach(activityFragment)
                         }
                         else {
                             add(
@@ -50,9 +51,10 @@ class Nav_act: AppCompatActivity() {
                 }
                 R.id.menu_profile-> {
                     val activityFragment = supportFragmentManager.findFragmentByTag("activity")
+                    val profileFragment = supportFragmentManager.findFragmentByTag("profile")
                     supportFragmentManager.beginTransaction().apply {
-                        if(activityFragment != null) {
-                            attach(activityFragment)
+                        if(profileFragment != null) {
+                            attach(profileFragment)
                         }
                         else {
                             add(
