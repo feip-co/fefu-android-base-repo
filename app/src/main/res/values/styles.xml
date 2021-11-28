@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">#4800FF</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textSize">18sp</item>
+        <item name="placeholderTextColor">#818181</item>
+        <item name="android:translationZ">2dp</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CapsOffedTabs" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CapsOffedToolbarItems" parent="Theme.AppCompat.Light">
+        <item name="textAllCaps">false</item>
+        <item name="android:actionMenuTextColor">#4B09F3</item>
+    </style>
+
+    <style name="TextInput" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+</resources>
