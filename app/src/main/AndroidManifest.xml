@@ -18,13 +18,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginScreenActivity"
+            android:name=".login.LoginScreenActivity"
             android:exported="true"/>
         <activity
-            android:name=".RegistrationScreenActivity"
+            android:name=".registration.RegistrationScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".TitleScreenActivity"
+            android:name=".mainscreen.TitleScreenActivity"
             android:exported="true" />
     </application>
 

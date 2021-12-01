@@ -3,13 +3,15 @@ package ru.fefu.activitytracker
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import ru.fefu.activitytracker.activity.Profile
+import ru.fefu.activitytracker.activity.Activities
 
 class Nav_act: AppCompatActivity() {
     private var bottomNav: BottomNavigationView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_screen_act)
+        setContentView(R.layout.activity_screen)
 
         bottomNav = findViewById(R.id.bottom_navigation)
 
@@ -17,7 +19,7 @@ class Nav_act: AppCompatActivity() {
             supportFragmentManager.beginTransaction().apply {
                 add (
                     R.id.fragment_container,
-                    Activities_act.newFragment(),
+                    Activities(),
                     "activity"
                 )
                 commit()
@@ -39,7 +41,7 @@ class Nav_act: AppCompatActivity() {
                         else {
                             add(
                                 R.id.fragment_container,
-                                Activities_act.newFragment(),
+                                Activities(),
                                 "activity"
                             )
                         }
@@ -49,7 +51,7 @@ class Nav_act: AppCompatActivity() {
                     }
                     true
                 }
-                R.id.menu_profile-> {
+                R.id.menu_profile -> {
                     val activityFragment = supportFragmentManager.findFragmentByTag("activity")
                     val profileFragment = supportFragmentManager.findFragmentByTag("profile")
                     supportFragmentManager.beginTransaction().apply {
@@ -59,7 +61,7 @@ class Nav_act: AppCompatActivity() {
                         else {
                             add(
                                 R.id.fragment_container,
-                                Profile_act.newFragment(),
+                                Profile(),
                                 "profile"
                             )
                         }

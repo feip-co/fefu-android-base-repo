@@ -33,4 +33,7 @@
     <string name="time_to_train_button">Нажимай на кнопку ниже и начинаем\nтрекать активность</string>
     <string name="other_activities">Пользователей</string>
     <string name="personal_activities">Мои</string>
+    <string name="delete_act">Удалить активность</string>
+    <string name="share">Поделиться</string>
+    <string name="comment">Комментарий</string>
 </resources>
