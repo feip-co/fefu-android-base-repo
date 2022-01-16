@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">Activity Tracker</string>
+    <string name="welcome_1">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="welcome_2">Созданный магистрами 1-го курса</string>
+    <string name="welcome_3">Зарегистрироваться</string>
+    <string name="welcome_4">Уже есть аккаунт?</string>
+
+    <string name="register_1">Регистрация</string>
+    <string name="register_2">Логин</string>
+    <string name="register_3">Имя или никнейм</string>
+    <string name="register_4">Пароль</string>
+    <string name="register_5">Повторите пароль</string>
+    <string name="register_6">
+        Нажимая на кнопку, вы соглашаетесь с <font color='#FF3700B3'>политикой конфиденциальности</font> и обработки персональных данных, а также принимаете <font color='#FF3700B3'>пользовательское соглашение</font>
+    </string>
+    <string name="register_radio_1">Пол</string>
+    <string name="register_radio_2">Мужской</string>
+    <string name="register_radio_3">Женский</string>
+    <string name="register_radio_4">Другое</string>
+    <string name="login_1">Вход</string>
+    <string name="login_2">Войти</string>
+    <string name="action">Активность</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_settings_save">Сохранить</string>
+    <string name="login_hint">Логин</string>
+    <string name="nick_hint">Имя или никнейм</string>
+    <string name="password_hint">Пароль</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="detailed_activity_action_delete_hint">Удалить активность</string>
+    <string name="detailed_activity_action_share_hint">Поделиться</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="change_password_repeat">Повторите пороль</string>
+    <string name="change_password_accept">Принять</string>
+    <string name="change_password_btn">Изменить пароль</string>
+    <string name="exit_button">Выйти</string>
+    <string name="detailed_activity_start">Старт</string>
+    <string name="detailed_activity_separator">|</string>
+    <string name="detailed_activity_end">Финиш</string>
+
 </resources>
